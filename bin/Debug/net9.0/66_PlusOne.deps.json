@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "66_PlusOne/1.0.0": {
+        "runtime": {
+          "66_PlusOne.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "66_PlusOne/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

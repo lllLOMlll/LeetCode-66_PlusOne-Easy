@@ -1,0 +1,15 @@
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\bin\Debug\net9.0\66_PlusOne.exe
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\bin\Debug\net9.0\66_PlusOne.deps.json
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\bin\Debug\net9.0\66_PlusOne.runtimeconfig.json
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\bin\Debug\net9.0\66_PlusOne.dll
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\bin\Debug\net9.0\66_PlusOne.pdb
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.AssemblyInfoInputs.cache
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.AssemblyInfo.cs
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.csproj.CoreCompileInputs.cache
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.sourcelink.json
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.dll
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\refint\66_PlusOne.dll
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.pdb
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\66_PlusOne.genruntimeconfig.cache
+C:\Users\louis\Documents\Code\LeetCode\Easy\66_PlusOne\66_PlusOne\obj\Debug\net9.0\ref\66_PlusOne.dll
