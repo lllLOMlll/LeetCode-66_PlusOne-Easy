@@ -7,27 +7,38 @@ public class Solution
     {
         int lastNumberOfTheArray = digits[digits.Length - 1];
         int lastNumberOfTheArrayPlusOne = lastNumberOfTheArray + 1;
-        // bool allNine = false; ;
+        bool allNine = false;
+        int[] newDigits = new int[digits.Length + 1];
 
-        // // Case all 9
-        // foreach (var digit in digits)
-        // {
-        //     if (digit != 9)
-        //     {
-        //         allNine = false;
-        //         break;
-        //     }
-        //     else
-        //     {
-        //         allNine = true;
-        //     }
-        // }
+        // Case all 9
+        foreach (var digit in digits)
+        {
+            if (digit != 9)
+            {
+                allNine = false;
+                break;
+            }
+            else
+            {
+                allNine = true;
+            }
+        }
 
-        // 499
+        if (allNine)
+        {
+            newDigits[0] = 1;
+            for (int i = 1; i < newDigits.Length; i++)
+            {
+                newDigits[i] = 0;
+            }
+
+            return newDigits;
+        }
 
         for (int i = digits.Length - 1; i >= 0; i--)
         {
 
+            // Last number not a 9
             if (digits[i] != 9)
             {
                 digits[i] = digits[i] + 1;
@@ -35,23 +46,35 @@ public class Solution
             }
             else
             {
+                // 9+1 = 10
                 if (digits.Length == 1) // 9+1 = 10
                 {
-                    int[] newDigits = new int[2];
                     newDigits[0] = 1;
                     newDigits[1] = 0;
 
                     return newDigits;
                 }
 
-                // Partir un forloop (int j = i) pour vérifier s'il y a des 9 avant et ajuster
+
                 if (i - 1 >= 0)
                 {
                     for (int j = i - 1; j >= 0; j--)
                     {
-                        // code
+                        // 49
+                        if (digits[j] != 9)
+                        {
 
-                        // ajuster le i
+                            digits[i] = 0;
+                            digits[j] = digits[j] + 1;
+
+                            return digits;
+                        }
+                        // 499
+                        else
+                        {
+                            digits[i] = 0;
+                            digits[j] = 0;
+                        }
                     }
                 }
                 else
@@ -60,60 +83,12 @@ public class Solution
                     digits[i - 1] = digits[i - 1] + 1;
                 }
 
-
+                return digits;
             }
 
-            return digits;
         }
 
         return digits;
-        // int[] arrayOfNine = [digits.Length];
-        // for (int i = 0; i < digits.Length - 1; i++)
-        // {
-        //     if (digits[i] == 9)
-        //     {
-        //         arrayOfNine[i] = 1;
-        //     }
-        //     else
-        //     {
-        //         arrayOfNine[i] = 0;
-        //     }
-        // }
-
-        //     if (allNine)
-        //     {
-        //         int[] newDigits = new int[digits.Length + 1];
-
-        //         newDigits[0] = 1;
-        //         for (int i = 1; i < newDigits.Length - 1; i++)
-        //         {
-        //             newDigits[i] = 0;
-        //         }
-
-        //         return newDigits;
-        //     }
-
-        // if (lastNumberOfTheArray == 9)
-        //     {
-
-
-        //         int[] newDigits = new int[digits.Length + 1];
-        //         for (int i = 0; i < digits.Length - 1; i++)
-        //         {
-        //             newDigits[i] = digits[i];
-        //         }
-        //         newDigits[newDigits.Length - 2] = 1;
-        //         newDigits[newDigits.Length - 1] = 0;
-
-        //         return newDigits;
-        //     }
-        //     else
-        //     {
-        //         digits[digits.Length - 1] = lastNumberOfTheArrayPlusOne;
-        //     }
-
-
-        // return digits;
     }
 
 
@@ -135,6 +110,13 @@ public class Solution
 
         // int[] digits5 = [4, 9, 9];
         // Console.WriteLine(string.Join(", ", s.PlusOne(digits5)));
+
+        // int[] digits6 = [4, 9];
+        // Console.WriteLine(string.Join(", ", s.PlusOne(digits6)));
+
+        int[] digits6 = [7, 9, 9, 9, 9];
+        Console.WriteLine(string.Join(", ", s.PlusOne(digits6)));
+
     }
 }
 
